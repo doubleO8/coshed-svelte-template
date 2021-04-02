@@ -1,4 +1,5 @@
 <script>
+  import { Row, Button, Col } from "sveltestrap";
   export let name;
 </script>
 
@@ -8,7 +9,18 @@
     Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
     how to build Svelte apps.
   </p>
+  <div>
+    <i class="fa fa-universal-access fa-3x" />
+  </div>
 </main>
+
+<section class="container">
+  <Row>
+    <Col>
+      <Button color="primary">Look Ma, a Button!</Button>
+    </Col>
+  </Row>
+</section>
 
 <style type="text/scss">
   $my-h1-colour: #3e3e3e;
@@ -19,6 +31,9 @@
     max-width: 240px;
     margin: 0 auto;
     color: $my-text-colour;
+    i.fa {
+      color: rgba(1, 1, 1, 0.1);
+    }
   }
 
   h1 {
